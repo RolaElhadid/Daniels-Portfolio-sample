@@ -1,0 +1,456 @@
+/*&##################################################### */
+/* &##################### General ##################### */
+/*&################################################### */
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+a,span{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h6
+{
+    font-family: "Montserrat", sans-serif;
+}
+
+h2::after{
+    content: "";
+    position: absolute;
+    background-image: url(../imgs/imgs/dots.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    top: 25px;
+    z-index: -1;
+    
+}
+p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+   
+}
+
+:root{
+    --bg-color: #f4f4f4;
+    --layer-bg:rgba(255, 255, 255, 0.95);
+}
+
+html{
+    scroll-padding-top: 85px;
+}
+/* *##################################################### */
+/* *###################### Utilities ####################*/
+/* *################################################### */
+.fw-800{
+    font-weight: 800;
+}
+.pt-100{
+    padding-top: 100px;
+}
+.pb-70{
+    padding-bottom: 70px;
+}
+.text-grey{
+    color: #748182;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.w-fit{
+    width: fit-content;
+}
+.bg-grey{
+    background-color: #f7f7f7;
+}
+.space-2{
+    word-spacing: 2px;
+}
+.isolate{
+    isolation: isolate;
+}
+.bg-darkgrey{
+    background-color: rgba(52, 52, 52,.8);
+}
+
+
+
+/* * ##################### Navbar ######################## */
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.logo{
+    padding-top: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: "Montserrat", sans-serif;
+}
+.nav-item  {
+    font-size: 14px;
+    margin: 25px 20px 0;
+}
+
+.navbar-nav .nav-link::before{
+    content: "";
+    width:0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: -5px;
+    transition: width 0.4s;
+    
+}
+.navbar-nav .nav-link.active::before{
+    width: 100%;
+}
+
+.navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar-nav .nav-link.active{
+    color: #fff;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* ~~~~~~~~~~~~~~` Header ~~~~~~~~~~~~~~~~~ */
+
+header{
+    
+    background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../imgs/imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+header .hello{
+    font-size: 50px;
+    
+}
+h1{
+    font-size: 6vw;
+    font-weight: 200;
+}
+
+.typing::after{
+    content: "";
+animation-name: typing;
+animation-duration: 6s;
+animation-iteration-count: infinite;
+
+font-weight: 400;
+}
+@keyframes typing{
+    0%{ content: "|";}
+    2%{content: "L|"; }
+    4%{content: "La|"; }
+    6%{content: "Lar|"; }
+    8%{content: "Larr|"; }
+    10%{content: "Larry|"; }
+    12%{content: " Larry D|";}
+    14%{content: " Larry Da|";}
+    12%{content: " Larry Dan|";}
+    16%{content: " Larry Danie|";}
+    18%{content: " Larry Daniel|";}
+    20%{content: " Larry Daniels|";}
+    30%{content: " Larry Daniels|";}
+    31%{content: " Larry Danie|";}
+    32%{content: " Larry Dani|";}
+    33%{content: " Larry Dan|";}
+    34%{content: " Larry Da|";}
+    35%{content: " Larry D|";}
+    36%{content: " Larry|";}
+    37%{content: " Larr|";}
+    38%{content: " Lar|";}
+    39%{content: " La|";}
+    40%{content: " L|";}
+    41%{content: " |";}
+    42%{content: " D|";}
+    43%{content: " De|";}
+    44%{content: " Dev|";}
+    45%{content: " Deve|";}
+    46%{content: " Devel|";}
+    47%{content: " Develo|";}
+    48%{content: " Develop|";}
+    49%{content: " Develope|";}
+    50%{content: " Developer|";}
+
+    
+}
+
+.social{
+    margin-top: 30px;
+}
+.social li{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social li i{
+    color: #fff;
+    font-size: 15px;
+}
+/* *################### About Section ############## */
+.about .inner{
+    padding-left: 30px;
+    position: relative;
+}
+.about .inner::before{
+    content: "";
+    position: absolute;
+    background-image: url(../imgs/imgs/dots.png);
+    background-repeat: repeat;
+    width: 80%;
+    height: 80%;
+    bottom: -30px;
+    left: 0;
+    z-index: -1;
+}
+
+.about .desc{
+    color: #999;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.progress-bars{
+    margin-top: 30px;
+}
+.progress{
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+.progress-title h6{
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.about .btn{
+    font-size: 13px;
+    margin-top: 20px;
+    --bs-btn-padding-x: 30px;
+    --bs-btn-padding-y: 10px;
+}
+
+
+.btn-black {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: black;
+    --bs-btn-border-color: black;
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: black;
+    
+   
+}
+
+.btn-white {
+    --bs-btn-color: black;
+    --bs-btn-bg: #fff;
+    --bs-btn-border-color: black;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: black;
+    --bs-btn-hover-border-color: black;
+   
+}
+
+/* &################# Services #################### */
+.card-icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color:var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    transition:all 500ms;
+}
+  .services .card-inner{
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+.card-inner:hover .card-icon {
+color: #eee;
+background-color: black;
+}
+/* ^<############################# Testmonials  #####################> */
+.client{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.carousel-indicators{
+    bottom: -60px;
+}
+.clients p{
+    max-width: 950px;
+   
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d6d6d6;
+    margin: 5px 7px;
+}
+
+.carousel-indicators .active{
+    background-color: #869791;
+}
+/* ~ ######################### Portfolio ########################### */
+
+.port figure figcaption{
+    position: absolute;
+    background-color: var(--layer-bg);
+   top: 5px;
+   bottom: 5px;
+   left: 5px;
+   right: 5px;
+   transform: translateY(10px);
+   transition: all 0.5s;
+   opacity: 0;
+}
+.port figure:hover figcaption{
+    transform: translateY(0);
+    opacity: 1;
+}
+.port figure h6{
+    transform: translateY(-15px);
+    transition: transform 0.5s;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+.port figure:hover h6{
+    transform: translateY(0);
+}
+
+.icons i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #111;
+    border: 1px #111 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: all 0.5;
+}
+.icons i:hover{
+    background-color:#fff;
+    color: #111;
+}
+
+/* *********************** *taps************************* */
+.nav-pills {
+    --bs-nav-pills-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-link-active-color: #0b0b0b;
+    --bs-nav-pills-link-active-bg: #fff;
+    
+}
+.nav-pills .nav-link::before{
+    content: "";
+    width:0;
+    height: 2px;
+    background: #111;
+    position: absolute;
+    bottom: -5px;
+    transition: width 0.4s;
+    
+}
+.nav-pills .nav-link.active::before{
+    width: calc(100% - 16px*2);
+}
+.nav{
+
+    --bs-nav-link-color: black;
+    --bs-nav-link-hover-color: black;
+}
+
+/*  *---------------------------- Team  ------------------------------------> */
+.team .inner .social-links{
+    position: absolute;
+    background-color: var(--layer-bg);
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    transition: all 500ms;
+    transform: scale(0.5);
+    opacity: 0;
+}
+
+.social-links ul{
+   transform: translateY(175px);
+}
+.card:hover .social-links{
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+.card .inner:hover img{
+   transform: scale(1.2);
+}
+.social-links .icons i{
+    width: 40px;
+    height: 40px;
+}
+.card .inner img{
+transition: transform 400ms;
+}
+
+/* &----------------------------- Contact -----------------------------  */
+.contact-icon{
+    width: 60px;
+    height: 60px;
+}
+.form-control{
+    background-color: var(--bg-color);
+    border: 0 solid ;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bg-color);
+    border-color:transparent;
+    outline: 0;
+    box-shadow:none ;
+}
+.contact .btn{
+    font-size: 13px;
+    margin-top: 20px;
+    --bs-btn-padding-x: 40px;
+    --bs-btn-padding-y: 10px;
+}
+
+/* ^############### Footer ##################*/
+footer{
+    padding: 30px;
+}
